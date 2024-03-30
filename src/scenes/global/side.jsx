@@ -93,7 +93,13 @@ const Sidebar = () => {
           {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
-                {/* Your Profile Image Here */}
+                <img
+                  alt="profile"
+                  width="100px"
+                  height="100px"
+                  src={`../../assets/ronald04.jpeg`}
+                  style={{ cursor: "pointer", borderRadius: "50%" }}
+                />
               </Box>
               <Box textAlign="center">
                 <Typography
@@ -217,7 +223,7 @@ const Sidebar = () => {
         </Menu>
       </ProSidebar>
     </Box>
-  );
-};
+  )
+}
 
 export default Sidebar;
